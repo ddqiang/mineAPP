@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/layout_margin_ten"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingLeft="70dp"
+            android:text="@string/equity_invent"
+            android:textSize="@dimen/size_twentyFive" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_margin_ten"
+            android:layout_marginTop="@dimen/layout_margin_ten"
+            android:src="@mipmap/nav_icon_activity" />
+
+        <ImageView
+            android:id="@+id/equity_search_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_margin_ten"
+            android:layout_marginTop="@dimen/layout_margin_ten"
+            android:src="@mipmap/nav_icon_search" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/equity_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/equity_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

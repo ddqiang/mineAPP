@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/text_size_twenty"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/discover_tab_hotResearch"
+            android:textSize="@dimen/layout_margin_threety" />
+
+        <TextView
+            android:id="@+id/discovery_lookAll_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="@dimen/layout_margin_ten"
+            android:text="@string/discover_look_all"
+            android:textSize="@dimen/text_size_twenty" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D3D3D3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_size_twenty">
+
+        <ImageView
+            android:id="@+id/discovery_head_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/discovery_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/discovery_head_iv"
+            android:text="dsadas" />
+
+        <TextView
+            android:id="@+id/discovery_introduce_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/discovery_head_iv"
+            android:maxLines="2"
+            android:text="dsadas"
+            android:textSize="@dimen/layout_margin_ten" />
+
+        <TextView
+            android:id="@+id/discovery_founder_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/discovery_head_iv"
+            android:layout_marginLeft="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/discovery_head_iv"
+            android:text="dsadas"
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/discovery_head_iv"
+            android:layout_toRightOf="@id/discovery_founder_tv"
+            android:text=":"
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:id="@+id/discovery_founder_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/discovery_head_iv"
+            android:layout_marginLeft="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/discovery_founder_tv"
+            android:text="dsadas"
+            android:textColor="#ff0000" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_size_twenty">
+
+        <ImageView
+            android:id="@+id/discovery_head_first_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/discovery_title_first_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/discovery_head_first_iv"
+            android:text="dsadas" />
+
+        <TextView
+            android:id="@+id/discovery_introduce_first_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/discovery_head_first_iv"
+            android:maxLines="2"
+            android:text="dsadas"
+            android:textSize="@dimen/layout_margin_ten" />
+
+        <TextView
+            android:id="@+id/discovery_founder_first_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/discovery_head_first_iv"
+            android:layout_marginLeft="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/discovery_head_first_iv"
+            android:text="dsadas"
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/discovery_head_first_iv"
+            android:layout_toRightOf="@id/discovery_founder_first_tv"
+            android:text=":"
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:id="@+id/discovery_founder_content_first_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/discovery_head_first_iv"
+            android:layout_marginLeft="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/discovery_founder_first_tv"
+            android:text="dsadas"
+            android:textColor="#ff0000" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_size_twenty">
+
+        <ImageView
+            android:id="@+id/discovery_head_second_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/discovery_title_second_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/discovery_head_second_iv"
+            android:text="dsadas" />
+
+        <TextView
+            android:id="@+id/discovery_introduce_second_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/discovery_head_second_iv"
+            android:maxLines="2"
+            android:text="dsadas"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/discovery_founder_second_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/discovery_head_second_iv"
+            android:layout_marginLeft="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/discovery_head_second_iv"
+            android:text="dsadas"
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/discovery_head_second_iv"
+            android:layout_toRightOf="@id/discovery_founder_second_tv"
+            android:text=":"
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:id="@+id/discovery_founder_content_second_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/discovery_head_second_iv"
+            android:layout_marginLeft="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/discovery_founder_second_tv"
+            android:text="dsadas"
+            android:textColor="#ff0000" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_ten"
+            android:text="@string/discover_express"
+            android:textSize="@dimen/layout_margin_threety" />
+
+        <TextView
+            android:id="@+id/discovery_understandInvest_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_margin_ten"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/discover_knowInvert"
+            android:textSize="@dimen/text_size_twenty" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_size_twenty"
+            android:layout_marginTop="@dimen/layout_margin_ten"
+            android:src="@mipmap/discovery_icon_list_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D3D3D3" />
+</LinearLayout>

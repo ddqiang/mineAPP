@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/layout_margin_ten"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/my_company_collectText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin_ten">
+
+        <ImageView
+            android:id="@+id/fragment_my_xml_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mine_icon_favorite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_size_twenty"
+            android:layout_marginTop="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/fragment_my_xml_title"
+            android:text="@string/mine_collect_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/discovery_icon_list_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#77b9b5b4" />
+
+    <RelativeLayout
+        android:id="@+id/my_company_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin_ten">
+
+        <ImageView
+            android:id="@+id/fragment_my_xml_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mine_icon_company" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_size_twenty"
+            android:layout_marginTop="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/fragment_my_xml_company"
+            android:text="@string/mine_invent_company" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/discovery_icon_list_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#77b9b5b4" />
+
+    <RelativeLayout
+        android:id="@+id/my_relative_invest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin_ten">
+
+        <ImageView
+            android:id="@+id/fragment_my_xml_invest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mine_icon_coupon" />
+
+        <TextView
+            android:id="@+id/my_investor_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_size_twenty"
+            android:layout_marginTop="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/fragment_my_xml_invest"
+            android:text="@string/mine_investment" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/discovery_icon_list_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#77b9b5b4" />
+
+    <RelativeLayout
+        android:id="@+id/my_relative_understand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin_ten"
+        android:layout_toRightOf="@id/fragment_my_xml_invest">
+
+        <ImageView
+            android:id="@+id/fragment_my_xml_know"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mine_icon_understand" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_size_twenty"
+            android:layout_marginTop="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/fragment_my_xml_know"
+            android:text="@string/mine_knowInvert" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/discovery_icon_list_arrow" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/new_item_scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/new_item_showDownPopu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin_ten">
+
+                <com.example.dllo.a36kr.main.tools.RoundImage
+                    android:id="@+id/collect_item_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    app:is_round="true" />
+
+                <TextView
+                    android:id="@+id/collect_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/collect_item_head"
+                    android:layout_toRightOf="@id/collect_item_head"
+                    android:text="三毛"
+                    android:textSize="@dimen/text_size_twenty" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin_five"
+                    android:layout_toRightOf="@id/collect_item_name"
+                    android:background="@drawable/equity_title_shape"
+                    android:text="作者"
+                    android:textColor="@android:color/holo_green_dark" />
+
+                <ImageView
+                    android:id="@+id/new_item_showPopu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_down" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_margin_one"
+                android:background="@color/background_grey" />
+
+            <TextView
+                android:id="@+id/new_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin_five"
+                android:text="@string/activity_collect_item_title" />
+
+            <TextView
+                android:id="@+id/new_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_collect_item_time" />
+
+            <TextView
+                android:id="@+id/new_item_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_collect_item_context" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/new_item_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/new_item_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/news_toolbar_icon_back" />
+
+        <ImageView
+            android:id="@+id/new_item_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/news_toolbar_icon_comment_number" />
+
+        <CheckBox
+            android:id="@+id/new_item_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/collect_text_tab"
+            android:button="@null" />
+
+        <ImageView
+            android:id="@+id/new_item_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/news_toolbar_icon_share" />
+
+        <ImageView
+            android:id="@+id/new_item_setPopu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/news_toolbar_icon_more" />
+
+    </LinearLayout>
+</RelativeLayout>

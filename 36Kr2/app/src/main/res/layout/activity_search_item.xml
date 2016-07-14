@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/search_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/search_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/search_iv"
+            android:maxLines="2"
+            android:text="dsadas" />
+
+        <TextView
+            android:id="@+id/search_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/search_iv"
+            android:layout_marginLeft="@dimen/layout_margin_five"
+            android:layout_toRightOf="@id/search_iv"
+            android:text="dsadas"
+            android:textSize="@dimen/layout_margin_ten" />
+
+        <TextView
+            android:id="@+id/search_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/search_iv"
+            android:layout_marginLeft="@dimen/layout_margin_ten"
+            android:layout_toRightOf="@id/search_name_tv"
+            android:text="dsadas" />
+
+        <TextView
+            android:id="@+id/search_column_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/search_iv"
+            android:layout_alignParentEnd="true"
+            android:text="早期项目" />
+    </RelativeLayout>
+</LinearLayout>

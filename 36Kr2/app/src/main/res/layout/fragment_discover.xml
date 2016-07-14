@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/fragment_discover_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/discovery_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_size_twoHundred" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/fragment_discover_tab" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_margin_ten"
+                    android:background="#f5f5f5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@mipmap/discovery_icon_days" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="投资金额和认购人数"
+                        android:textSize="@dimen/text_size_twenty" />
+
+                </LinearLayout>
+
+                <include layout="@layout/fragment_discover_tab_hot" />
+
+                <include layout="@layout/fragment_discover_last" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/fragment_discover_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/layout_margin_ten"
+            android:src="@mipmap/discovery_icon_new_search" />
+    </RelativeLayout>
+</LinearLayout>

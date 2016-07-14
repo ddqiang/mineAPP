@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_margin_ten">
+
+        <ImageView
+            android:id="@+id/discover_nearActivity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/news_toolbar_icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="近期活动"
+            android:textSize="@dimen/layout_margin_threety"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0f0f0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_fifty"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/discover_nearActivity_type"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_fifty"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="活动类型"
+                android:textSize="@dimen/size_fifteen" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_margin_ten"
+                android:layout_toRightOf="@id/two"
+                android:src="@mipmap/icon_down" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/discover_nearActivity_time"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_fifty"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="活动时间"
+                android:textSize="@dimen/size_fifteen" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_margin_ten"
+                android:layout_toRightOf="@id/one"
+                android:src="@mipmap/icon_down" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_light_grey" />
+
+    <ListView
+        android:id="@+id/discover_nearActivity_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

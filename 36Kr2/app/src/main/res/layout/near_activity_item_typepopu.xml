@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/near_activity_typeLv_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_size_twenty"
+        android:padding="@dimen/size_fifteen"
+        android:text="@string/drawer_all"
+        android:textSize="@dimen/size_fifteen" />
+
+    <TextView
+        android:id="@+id/near_activity_typeLv_demoDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_size_twenty"
+        android:padding="@dimen/size_fifteen"
+        android:text="@string/drawer_demoDay"
+        android:textSize="@dimen/size_fifteen" />
+
+    <TextView
+        android:id="@+id/near_activity_typeLv_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_size_twenty"
+        android:padding="@dimen/size_fifteen"
+        android:text="@string/drawer_krSpace"
+        android:textSize="@dimen/size_fifteen" />
+
+    <TextView
+        android:id="@+id/near_activity_typeLv_invest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_size_twenty"
+        android:padding="@dimen/size_fifteen"
+        android:text="@string/drawer_invernt"
+        android:textSize="@dimen/size_fifteen" />
+
+    <TextView
+        android:id="@+id/near_activity_typeLv_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_size_twenty"
+        android:padding="@dimen/size_fifteen"
+        android:text="企业服务"
+        android:textSize="@dimen/size_fifteen" />
+
+    <TextView
+        android:id="@+id/near_activity_typeLv_financing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_size_twenty"
+        android:padding="@dimen/size_fifteen"
+        android:text="@string/drawer_rapidly"
+        android:textSize="@dimen/size_fifteen" />
+</LinearLayout>

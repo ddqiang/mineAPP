@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_margin_ten">
+
+        <ImageView
+            android:id="@+id/activity_mine_company_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/news_toolbar_icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的投资公司"
+            android:textSize="@dimen/text_size_twenty"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/activity_mine_company_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/text_size_hundred"
+            android:src="@mipmap/mine_ph_noitems" />
+
+        <TextView
+            android:id="@+id/activity_mine_company_backEquity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_mine_company_one"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#3366cc"
+            android:padding="@dimen/layout_margin_ten"
+            android:text="@string/equity_company_allActivity" />
+    </RelativeLayout>
+</LinearLayout>
